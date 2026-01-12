@@ -3,7 +3,7 @@ entries:
   spark-operator:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2026-01-12T15:26:35.2902796+05:30"
+    created: "2026-01-12T16:32:02.297959+05:30"
     description: A Helm chart for Spark on Kubernetes operator.
     digest: 38d15ea495bed2cc9909c2108f585c642bf5649e1c13cbb359a8b03f1e20808a
     home: https://github.com/kubeflow/spark-operator
@@ -19,6 +19,6 @@ entries:
       url: https://github.com/ChenYi015
     name: spark-operator
     urls:
-    - c:/Users/Alphi-Sneha.R/Xealei-2.0-DataPlane-HelmCharts/docs/spark-operator-2.3.0.tgz
+    - https://alphind.github.io/Xealei-2.0-DataPlane-HelmCharts/spark-operator-2.3.0.tgz
     version: 2.3.0
-generated: "2026-01-12T15:26:35.2811511+05:30"
+generated: "2026-01-12T16:32:02.2875116+05:30"
