@@ -60,18 +60,9 @@ controller:
   # -- Number of replicas of controller.
   replicas: 1
 
-  # -- The number of old history to retain to allow rollback.
-  revisionHistoryLimit: 10
-
   leaderElection:
     # -- Specifies whether to enable leader election for controller.
     enable: true
-    # -- Leader election lease duration.
-    leaseDuration: 15s
-    # -- Leader election renew deadline.
-    renewDeadline: 10s
-    # -- Leader election retry period.
-    retryPeriod: 2s
 
   # -- Reconcile concurrency, higher values might increase memory usage.
   workers: 10
@@ -260,9 +251,6 @@ webhook:
   # -- Number of replicas of webhook server.
   replicas: 1
 
-  # -- The number of old history to retain to allow rollback.
-  revisionHistoryLimit: 10
-
   leaderElection:
     # -- Specifies whether to enable leader election for webhook.
     enable: true
@@ -403,7 +391,7 @@ spark:
   # If empty string is included, all namespaces will be allowed.
   # Make sure the namespaces have already existed.
   jobNamespaces:
-  - ""
+  - default
 
   serviceAccount:
     # -- Specifies whether to create a service account for spark applications.

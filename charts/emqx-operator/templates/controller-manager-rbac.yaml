@@ -1,0 +1,172 @@
+{{- if .Values.serviceAccount.create -}}
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: {{ include "emqx-operator.serviceAccountName" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "emqx-operator.labels" . | nindent 4 }}
+  {{- with .Values.serviceAccount.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+{{ if .Values.singleNamespace }}
+kind: RoleBinding
+metadata:
+  name: {{ include "emqx-operator.fullname" . }}-manager-rolebinding
+  namespace: {{ .Release.Namespace }}
+{{- else }}
+kind: ClusterRoleBinding
+metadata:
+  name: {{ include "emqx-operator.fullname" . }}-manager-rolebinding
+{{- end }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  {{- if .Values.singleNamespace }}
+  kind: Role
+  {{- else }}
+  kind: ClusterRole
+  {{- end }}
+  name: {{ include "emqx-operator.fullname" . }}-manager-role
+subjects:
+- kind: ServiceAccount
+  name: {{ include "emqx-operator.serviceAccountName" . }}
+  namespace: {{ .Release.Namespace }}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+{{ if .Values.singleNamespace }}
+kind: Role
+metadata:
+  name: {{ include "emqx-operator.fullname" . }}-manager-role
+  namespace: {{ .Release.Namespace }}
+{{- else }}
+kind: ClusterRole
+metadata:
+  name: {{ include "emqx-operator.fullname" . }}-manager-role
+{{- end }}
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - configmaps
+  - endpoints
+  - persistentvolumes
+  - secrets
+  - services
+  verbs:
+  - create
+  - get
+  - list
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - events
+  verbs:
+  - create
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - persistentvolumeclaims
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - get
+  - list
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods/status
+  verbs:
+  - patch
+- apiGroups:
+  - apps
+  resources:
+  - replicasets
+  - statefulsets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - update
+  - watch
+- apiGroups:
+  - apps.emqx.io
+  resources:
+  - emqxbrokers
+  - emqxenterprises
+  - emqxes
+  - emqxplugins
+  - rebalances
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - apps.emqx.io
+  resources:
+  - emqxbrokers/finalizers
+  - emqxenterprises/finalizers
+  - emqxes/finalizers
+  - emqxplugins/finalizers
+  - rebalances/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - apps.emqx.io
+  resources:
+  - emqxbrokers/status
+  - emqxenterprises/status
+  - emqxes/status
+  - emqxplugins/status
+  - rebalances/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - coordination.k8s.io
+  resources:
+  - leases
+  verbs:
+  - create
+  - get
+  - list
+  - update
+  - watch
+- apiGroups:
+  - policy
+  resources:
+  - poddisruptionbudgets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - update
+  - watch
+{{- end }}

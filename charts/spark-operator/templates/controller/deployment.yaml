@@ -22,7 +22,6 @@ metadata:
     {{- include "spark-operator.controller.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.controller.replicas }}
-  revisionHistoryLimit: {{ .Values.controller.revisionHistoryLimit }}
   selector:
     matchLabels:
       {{- include "spark-operator.controller.selectorLabels" . | nindent 6 }}
@@ -104,9 +103,6 @@ spec:
         - --leader-election=true
         - --leader-election-lock-name={{ include "spark-operator.controller.leaderElectionName" . }}
         - --leader-election-lock-namespace={{ .Release.Namespace }}
-        - --leader-election-lease-duration={{ .Values.controller.leaderElection.leaseDuration }}
-        - --leader-election-renew-deadline={{ .Values.controller.leaderElection.renewDeadline }}
-        - --leader-election-retry-period={{ .Values.controller.leaderElection.retryPeriod }}
         {{- else -}}
         - --leader-election=false
         {{- end }}

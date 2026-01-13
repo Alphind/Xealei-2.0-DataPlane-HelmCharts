@@ -1,6 +1,6 @@
 # spark-operator
 
-![Version: 2.4.0](https://img.shields.io/badge/Version-2.4.0-informational?style=flat-square) ![AppVersion: 2.4.0](https://img.shields.io/badge/AppVersion-2.4.0-informational?style=flat-square)
+![Version: 2.3.0](https://img.shields.io/badge/Version-2.3.0-informational?style=flat-square) ![AppVersion: 2.3.0](https://img.shields.io/badge/AppVersion-2.3.0-informational?style=flat-square)
 
 A Helm chart for Spark on Kubernetes operator.
 
@@ -88,11 +88,7 @@ See [helm uninstall](https://helm.sh/docs/helm/helm_uninstall) for command docum
 | hook.image.repository | string | `"kubeflow/spark-operator/kubectl"` | Image repository. |
 | hook.image.tag | string | If not set, the chart appVersion will be used. | Image tag. |
 | controller.replicas | int | `1` | Number of replicas of controller. |
-| controller.revisionHistoryLimit | int | `10` | The number of old history to retain to allow rollback. |
 | controller.leaderElection.enable | bool | `true` | Specifies whether to enable leader election for controller. |
-| controller.leaderElection.leaseDuration | string | `"15s"` | Leader election lease duration. |
-| controller.leaderElection.renewDeadline | string | `"10s"` | Leader election renew deadline. |
-| controller.leaderElection.retryPeriod | string | `"2s"` | Leader election retry period. |
 | controller.workers | int | `10` | Reconcile concurrency, higher values might increase memory usage. |
 | controller.logLevel | string | `"info"` | Configure the verbosity of logging, can be one of `debug`, `info`, `error`. |
 | controller.logEncoder | string | `"console"` | Configure the encoder of logging, can be one of `console` or `json`. |
@@ -139,7 +135,6 @@ See [helm uninstall](https://helm.sh/docs/helm/helm_uninstall) for command docum
 | controller.workqueueRateLimiter.maxDelay.duration | string | `"6h"` | Specifies the maximum delay duration for the workqueue rate limiter. |
 | webhook.enable | bool | `true` | Specifies whether to enable webhook. |
 | webhook.replicas | int | `1` | Number of replicas of webhook server. |
-| webhook.revisionHistoryLimit | int | `10` | The number of old history to retain to allow rollback. |
 | webhook.leaderElection.enable | bool | `true` | Specifies whether to enable leader election for webhook. |
 | webhook.logLevel | string | `"info"` | Configure the verbosity of logging, can be one of `debug`, `info`, `error`. |
 | webhook.logEncoder | string | `"console"` | Configure the encoder of logging, can be one of `console` or `json`. |

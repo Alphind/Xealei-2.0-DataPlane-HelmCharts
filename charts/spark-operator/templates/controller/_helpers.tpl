@@ -199,7 +199,6 @@ Create the role policy rules for the controller in every Spark job namespace
   - scheduledsparkapplications/status
   - scheduledsparkapplications/finalizers
   - sparkconnects/status
-  - sparkconnects/finalizers
   verbs:
   - get
   - update
