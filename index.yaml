@@ -3,7 +3,7 @@ entries:
   aws-cloudwatch-metrics:
   - apiVersion: v1
     appVersion: 1.300032.2b361
-    created: "2026-01-13T17:33:48.8555442+05:30"
+    created: "2026-01-13T18:11:03.8026609+05:30"
     description: A Helm chart to deploy aws-cloudwatch-metrics project
     digest: 472771e093f212704f240ac89df8f46560bcf8a678955a32b298b886b4176cf9
     home: https://github.com/aws/eks-charts
@@ -17,12 +17,12 @@ entries:
     sources:
     - https://github.com/aws/eks-charts
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/aws-cloudwatch-metrics-0.0.11.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/aws-cloudwatch-metrics-0.0.11.tgz
     version: 0.0.11
   aws-ebs-csi-driver:
   - apiVersion: v2
     appVersion: 1.52.1
-    created: "2026-01-13T17:33:48.8583773+05:30"
+    created: "2026-01-13T18:11:03.8052599+05:30"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 16c6a9eedf845c1feb5212772ad4499ea5a45af7ed7f8c287d90392403522cc3
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -38,12 +38,12 @@ entries:
     sources:
     - https://github.com/kubernetes-sigs/aws-ebs-csi-driver
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/aws-ebs-csi-driver-2.52.1.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/aws-ebs-csi-driver-2.52.1.tgz
     version: 2.52.1
   aws-efs-csi-driver:
   - apiVersion: v2
     appVersion: 2.1.15
-    created: "2026-01-13T17:33:48.8583773+05:30"
+    created: "2026-01-13T18:11:03.8059053+05:30"
     description: A Helm chart for AWS EFS CSI Driver
     digest: a952221200359b5ccfcad9384389c050eb60804c9176be49c0b0f68ca29bb257
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -61,12 +61,12 @@ entries:
     sources:
     - https://github.com/kubernetes-sigs/aws-efs-csi-driver
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/aws-efs-csi-driver-3.2.6.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/aws-efs-csi-driver-3.2.6.tgz
     version: 3.2.6
   aws-load-balancer-controller:
   - apiVersion: v2
     appVersion: v2.11.0
-    created: "2026-01-13T17:33:48.8603847+05:30"
+    created: "2026-01-13T18:11:03.8099164+05:30"
     description: AWS Load Balancer Controller Helm chart for Kubernetes
     digest: c61f72c475ed8bdab935d0e3fcfc4b6ac6463b6cb89ef59d4148e9ca8e18d1dc
     home: https://github.com/aws/eks-charts
@@ -88,12 +88,12 @@ entries:
     sources:
     - https://github.com/aws/eks-charts
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/aws-load-balancer-controller-1.11.0.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/aws-load-balancer-controller-1.11.0.tgz
     version: 1.11.0
   aws-vpc-cni:
   - apiVersion: v1
     appVersion: v1.20.4
-    created: "2026-01-13T17:33:48.8603847+05:30"
+    created: "2026-01-13T18:11:03.8106631+05:30"
     description: A Helm chart for the AWS VPC CNI
     digest: f746e109333a03462beaf92f98edfa8e656e5a6acfe2b9a7ff97430bd1ca8fe2
     home: https://github.com/aws/amazon-vpc-cni-k8s
@@ -111,12 +111,12 @@ entries:
     sources:
     - https://github.com/aws/amazon-vpc-cni-k8s
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/aws-vpc-cni-1.20.4.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/aws-vpc-cni-1.20.4.tgz
     version: 1.20.4
   cluster-autoscaler:
   - apiVersion: v2
     appVersion: 1.34.1
-    created: "2026-01-13T17:33:48.86189+05:30"
+    created: "2026-01-13T18:11:03.8126392+05:30"
     description: Scales Kubernetes worker nodes within autoscaling groups.
     digest: 9cde797143726a5910447cb04e3f9bfed5b1006a6f275e9588cca064242a20c8
     home: https://github.com/kubernetes/autoscaler
@@ -129,12 +129,12 @@ entries:
     - https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler
     type: application
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/cluster-autoscaler-9.52.1.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/cluster-autoscaler-9.52.1.tgz
     version: 9.52.1
   csi-secrets-store-provider-aws:
   - apiVersion: v2
     appVersion: 1.0.r2-6-gee95299-2022.04.14.21.07
-    created: "2026-01-13T17:33:48.8628961+05:30"
+    created: "2026-01-13T18:11:03.8139077+05:30"
     dependencies:
     - condition: secrets-store-csi-driver.install
       name: secrets-store-csi-driver
@@ -157,12 +157,12 @@ entries:
     sources:
     - https://github.com/aws/secrets-store-csi-driver-provider-aws
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/csi-secrets-store-provider-aws-0.0.4.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/csi-secrets-store-provider-aws-0.0.4.tgz
     version: 0.0.4
   emqx-operator:
   - apiVersion: v2
     appVersion: 2.2.29
-    created: "2026-01-13T17:33:48.8660006+05:30"
+    created: "2026-01-13T18:11:03.8203799+05:30"
     description: A Helm chart for EMQX Operator Controller
     digest: 2e3abc2ff9a9d663e2e675924cbf0520ee5590b5660f673ec5156edda8484f6a
     name: emqx-operator
@@ -171,12 +171,12 @@ entries:
     - https://github.com/emqx/emqx
     type: application
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/emqx-operator-2.2.29.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/emqx-operator-2.2.29.tgz
     version: 2.2.29
   external-secrets:
   - apiVersion: v2
     appVersion: v0.16.2
-    created: "2026-01-13T17:33:48.871151+05:30"
+    created: "2026-01-13T18:11:03.8270565+05:30"
     dependencies:
     - condition: bitwarden-sdk-server.enabled
       name: bitwarden-sdk-server
@@ -196,7 +196,7 @@ entries:
     name: external-secrets
     type: application
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/external-secrets-0.16.2.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/external-secrets-0.16.2.tgz
     version: 0.16.2
   grafana:
   - annotations:
@@ -208,7 +208,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-13T17:33:48.8751344+05:30"
+    created: "2026-01-13T18:11:03.8303259+05:30"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 138a8be6a057088b5a43a55e2669fb7c37cbda0a663400d43000383a49430bed
     home: https://grafana.com
@@ -236,7 +236,7 @@ entries:
     - https://github.com/grafana/helm-charts
     type: application
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/grafana-9.2.2.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/grafana-9.2.2.tgz
     version: 9.2.2
   ingress-nginx:
   - annotations:
@@ -245,7 +245,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.14.0
-    created: "2026-01-13T17:33:48.8776379+05:30"
+    created: "2026-01-13T18:11:03.8357099+05:30"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 2bc2dd3542cde37aa6f06904bb2407281a14c62e13ebdac8e9d36d37c8df7ff0
@@ -264,7 +264,7 @@ entries:
     sources:
     - https://github.com/kubernetes/ingress-nginx
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/ingress-nginx-4.14.0.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/ingress-nginx-4.14.0.tgz
     version: 4.14.0
   prometheus:
   - annotations:
@@ -276,7 +276,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v3.4.0
-    created: "2026-01-13T17:33:48.8836437+05:30"
+    created: "2026-01-13T18:11:03.8450767+05:30"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -327,7 +327,7 @@ entries:
     - https://github.com/kubernetes/kube-state-metrics
     type: application
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/prometheus-27.16.0.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/prometheus-27.16.0.tgz
     version: 27.16.0
   redis-cluster:
   - annotations:
@@ -343,7 +343,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.2.1
-    created: "2026-01-13T17:33:48.887643+05:30"
+    created: "2026-01-13T18:11:03.8524544+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -367,12 +367,12 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/redis-cluster
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/redis-cluster-13.0.4.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/redis-cluster-13.0.4.tgz
     version: 13.0.4
   spark-operator:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2026-01-13T17:33:48.8931537+05:30"
+    created: "2026-01-13T18:11:03.8604468+05:30"
     description: A Helm chart for Spark on Kubernetes operator.
     digest: d7d35643f7d632e02c3c817d0b4405cf6ff8b5788ce50cf676bdc400b43f74b0
     home: https://github.com/kubeflow/spark-operator
@@ -388,12 +388,12 @@ entries:
       url: https://github.com/ChenYi015
     name: spark-operator
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/spark-operator-2.3.0.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/spark-operator-2.3.0.tgz
     version: 2.3.0
   strimzi-kafka-operator:
   - apiVersion: v2
     appVersion: 0.47.0
-    created: "2026-01-13T17:33:48.8978431+05:30"
+    created: "2026-01-13T18:11:03.8648871+05:30"
     description: 'Strimzi: Apache Kafka running on Kubernetes'
     digest: 5b0e79c0e7a6280b17dd2e0e6abdfc7729d92571169fbb5ab6b2130982a72e7b
     home: https://strimzi.io/
@@ -414,6 +414,6 @@ entries:
     sources:
     - https://github.com/strimzi/strimzi-kafka-operator
     urls:
-    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/strimzi-kafka-operator-0.47.0.tgz
+    - https://github.com/Alphind/Xealei-2.0-DataPlane-HelmCharts.git/docs/strimzi-kafka-operator-0.47.0.tgz
     version: 0.47.0
-generated: "2026-01-13T17:33:48.8548017+05:30"
+generated: "2026-01-13T18:11:03.8020036+05:30"
