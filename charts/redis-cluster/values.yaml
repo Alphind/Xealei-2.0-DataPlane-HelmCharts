@@ -26,9 +26,9 @@ global:
   ##
   security:
     ## @param global.security.allowInsecureImages Allows skipping image verification
-    allowInsecureImages: false
+    allowInsecureImages: true
   redis:
-    password: ""
+    password: "Redispass@demo"
   ## Compatibility adaptations for Kubernetes platforms
   ##
   compatibility:
@@ -46,7 +46,7 @@ global:
 nameOverride: ""
 ## @param fullnameOverride String to fully override common.names.fullname template
 ##
-fullnameOverride: ""
+fullnameOverride: "redis-cluster"
 ## @param namespaceOverride String to fully override common.names.namespace template
 ##
 namespaceOverride: ""
@@ -576,7 +576,17 @@ redis:
   ## If not set, the default Redis configuration from the chart is used
   ## ref: https://redis.io/topics/config
   ##
-  defaultConfigOverride: ""
+  defaultConfigOverride: |
+    ##REPLICATION SAFETY
+    replica-read-only yes
+    replica-serve-stale-data no
+    repl-backlog-size 256mb
+    repl-backlog-ttl 3600
+
+    ##DATA DURABILITY
+    appendonly yes
+    appendfsync everysec
+
   ## @param redis.configmap Additional Redis&reg; configuration for the nodes
   ## ref: https://redis.io/topics/config
   ##
