@@ -3,7 +3,7 @@ entries:
   aws-cloudwatch-metrics:
   - apiVersion: v1
     appVersion: 1.300032.2b361
-    created: "2026-01-21T17:08:27.901107+05:30"
+    created: "2026-01-21T18:01:08.5918204+05:30"
     description: A Helm chart to deploy aws-cloudwatch-metrics project
     digest: 472771e093f212704f240ac89df8f46560bcf8a678955a32b298b886b4176cf9
     home: https://github.com/aws/eks-charts
@@ -22,7 +22,7 @@ entries:
   aws-ebs-csi-driver:
   - apiVersion: v2
     appVersion: 1.52.1
-    created: "2026-01-21T17:08:27.9043698+05:30"
+    created: "2026-01-21T18:01:08.5934345+05:30"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 16c6a9eedf845c1feb5212772ad4499ea5a45af7ed7f8c287d90392403522cc3
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -43,7 +43,7 @@ entries:
   aws-efs-csi-driver:
   - apiVersion: v2
     appVersion: 2.1.15
-    created: "2026-01-21T17:08:27.9064752+05:30"
+    created: "2026-01-21T18:01:08.5945157+05:30"
     description: A Helm chart for AWS EFS CSI Driver
     digest: a952221200359b5ccfcad9384389c050eb60804c9176be49c0b0f68ca29bb257
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -66,7 +66,7 @@ entries:
   aws-load-balancer-controller:
   - apiVersion: v2
     appVersion: v2.11.0
-    created: "2026-01-21T17:08:27.9100238+05:30"
+    created: "2026-01-21T18:01:08.595622+05:30"
     description: AWS Load Balancer Controller Helm chart for Kubernetes
     digest: c61f72c475ed8bdab935d0e3fcfc4b6ac6463b6cb89ef59d4148e9ca8e18d1dc
     home: https://github.com/aws/eks-charts
@@ -93,7 +93,7 @@ entries:
   aws-vpc-cni:
   - apiVersion: v1
     appVersion: v1.20.4
-    created: "2026-01-21T17:08:27.912031+05:30"
+    created: "2026-01-21T18:01:08.5967211+05:30"
     description: A Helm chart for the AWS VPC CNI
     digest: f746e109333a03462beaf92f98edfa8e656e5a6acfe2b9a7ff97430bd1ca8fe2
     home: https://github.com/aws/amazon-vpc-cni-k8s
@@ -116,7 +116,7 @@ entries:
   cluster-autoscaler:
   - apiVersion: v2
     appVersion: 1.34.1
-    created: "2026-01-21T17:08:27.9155686+05:30"
+    created: "2026-01-21T18:01:08.5983712+05:30"
     description: Scales Kubernetes worker nodes within autoscaling groups.
     digest: 9cde797143726a5910447cb04e3f9bfed5b1006a6f275e9588cca064242a20c8
     home: https://github.com/kubernetes/autoscaler
@@ -134,7 +134,7 @@ entries:
   csi-secrets-store-provider-aws:
   - apiVersion: v2
     appVersion: 1.0.r2-6-gee95299-2022.04.14.21.07
-    created: "2026-01-21T17:08:27.9175697+05:30"
+    created: "2026-01-21T18:01:08.6002279+05:30"
     dependencies:
     - condition: secrets-store-csi-driver.install
       name: secrets-store-csi-driver
@@ -162,7 +162,7 @@ entries:
   emqx-operator:
   - apiVersion: v2
     appVersion: 2.2.29
-    created: "2026-01-21T17:08:27.9215669+05:30"
+    created: "2026-01-21T18:01:08.603001+05:30"
     description: A Helm chart for EMQX Operator Controller
     digest: 2e3abc2ff9a9d663e2e675924cbf0520ee5590b5660f673ec5156edda8484f6a
     name: emqx-operator
@@ -176,7 +176,7 @@ entries:
   external-secrets:
   - apiVersion: v2
     appVersion: v0.16.2
-    created: "2026-01-21T17:08:27.9271152+05:30"
+    created: "2026-01-21T18:01:08.6088617+05:30"
     dependencies:
     - condition: bitwarden-sdk-server.enabled
       name: bitwarden-sdk-server
@@ -208,7 +208,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-21T17:08:27.9321143+05:30"
+    created: "2026-01-21T18:01:08.6117726+05:30"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 138a8be6a057088b5a43a55e2669fb7c37cbda0a663400d43000383a49430bed
     home: https://grafana.com
@@ -245,7 +245,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.14.0
-    created: "2026-01-21T17:08:27.9356203+05:30"
+    created: "2026-01-21T18:01:08.6154811+05:30"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 2bc2dd3542cde37aa6f06904bb2407281a14c62e13ebdac8e9d36d37c8df7ff0
@@ -276,7 +276,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v3.4.0
-    created: "2026-01-21T17:08:27.9432135+05:30"
+    created: "2026-01-21T18:01:08.6224776+05:30"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -343,7 +343,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.2.1
-    created: "2026-01-21T17:08:27.9459299+05:30"
+    created: "2026-01-21T18:01:08.6247591+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -353,7 +353,7 @@ entries:
     description: Redis(R) is an open source, scalable, distributed in-memory cache
       for applications. It can be used to store and serve data in the form of strings,
       hashes, lists, sets and sorted sets.
-    digest: a66693e6b4f7eae761517686d41fb5cc8352983c98966a89e726e7a3ee9c3f23
+    digest: 218ec9d52536fb87b12d6b8371184a8548728d08b1b60fe339f51c49c38f88ca
     home: https://bitnami.com
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -372,7 +372,7 @@ entries:
   spark-operator:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2026-01-21T17:08:27.9529348+05:30"
+    created: "2026-01-21T18:01:08.6313783+05:30"
     description: A Helm chart for Spark on Kubernetes operator.
     digest: d7d35643f7d632e02c3c817d0b4405cf6ff8b5788ce50cf676bdc400b43f74b0
     home: https://github.com/kubeflow/spark-operator
@@ -393,7 +393,7 @@ entries:
   strimzi-kafka-operator:
   - apiVersion: v2
     appVersion: 0.47.0
-    created: "2026-01-21T17:08:27.9582845+05:30"
+    created: "2026-01-21T18:01:08.637+05:30"
     description: 'Strimzi: Apache Kafka running on Kubernetes'
     digest: 5b0e79c0e7a6280b17dd2e0e6abdfc7729d92571169fbb5ab6b2130982a72e7b
     home: https://strimzi.io/
@@ -416,4 +416,4 @@ entries:
     urls:
     - https://alphind.github.io/Xealei-2.0-DataPlane-HelmCharts/strimzi-kafka-operator-0.47.0.tgz
     version: 0.47.0
-generated: "2026-01-21T17:08:27.8988172+05:30"
+generated: "2026-01-21T18:01:08.590833+05:30"
