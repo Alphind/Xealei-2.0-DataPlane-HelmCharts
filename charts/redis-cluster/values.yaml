@@ -26,9 +26,9 @@ global:
   ##
   security:
     ## @param global.security.allowInsecureImages Allows skipping image verification
-    allowInsecureImages: true
+    allowInsecureImages: false
   redis:
-    password: "Redispass@demo"
+    password: ""
   ## Compatibility adaptations for Kubernetes platforms
   ##
   compatibility:
@@ -46,7 +46,7 @@ global:
 nameOverride: ""
 ## @param fullnameOverride String to fully override common.names.fullname template
 ##
-fullnameOverride: "redis-cluster"
+fullnameOverride: ""
 ## @param namespaceOverride String to fully override common.names.namespace template
 ##
 namespaceOverride: ""
@@ -87,9 +87,9 @@ diagnosticMode:
 ## @param image.debug Enable image debug mode
 ##
 image:
-  registry: 615299770583.dkr.ecr.us-east-1.amazonaws.com
-  repository: redis-cluster
-  tag: 8.2.1
+  registry: docker.io
+  repository: bitnami/redis-cluster
+  tag: 8.2.1-debian-12-r0
   digest: ""
   ## Specify a imagePullPolicy
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
@@ -577,7 +577,6 @@ redis:
   ## ref: https://redis.io/topics/config
   ##
   defaultConfigOverride: ""
-
   ## @param redis.configmap Additional Redis&reg; configuration for the nodes
   ## ref: https://redis.io/topics/config
   ##
