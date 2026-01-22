@@ -8,8 +8,8 @@ replicas: 1
 watchNamespaces: []
 watchAnyNamespace: false
 
-defaultImageRegistry: quay.io
-defaultImageRepository: strimzi
+defaultImageRegistry: 615299770583.dkr.ecr.us-east-1.amazonaws.com
+defaultImageRepository: kafka
 defaultImageTag: 0.47.0
 
 image:
