@@ -26,7 +26,7 @@ global:
   ##
   security:
     ## @param global.security.allowInsecureImages Allows skipping image verification
-    allowInsecureImages: false
+    allowInsecureImages: true
   redis:
     password: ""
   ## Compatibility adaptations for Kubernetes platforms
@@ -87,9 +87,9 @@ diagnosticMode:
 ## @param image.debug Enable image debug mode
 ##
 image:
-  registry: docker.io
-  repository: bitnami/redis-cluster
-  tag: 8.2.1-debian-12-r0
+  registry: 615299770583.dkr.ecr.us-east-1.amazonaws.com
+  repository: redis-cluster
+  tag: 8.2.1
   digest: ""
   ## Specify a imagePullPolicy
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
