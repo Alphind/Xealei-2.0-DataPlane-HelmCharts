@@ -14,8 +14,7 @@ defaultImageTag: 0.47.0
 
 image:
   registry: "615299770583.dkr.ecr.us-east-1.amazonaws.com"
-  repository: ""
-  name: kafka
+  repository: "kafka"
   tag: "0.47.0"
   # imagePullSecrets:
   #   - name: secretname
